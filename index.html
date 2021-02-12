@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Тестовое</title>
+</head>
+<body>
+    <div class="body_wrapper">
+
+            <div id="modal" class="modal_area">
+                <button onclick="closeModal()" class="close_button">
+                    <img src="/img/close_modal-pic.svg" alt="close">
+                </button>
+                <div class="modal">
+                    <select>
+                        <option>Любого логотипа</option>
+                        <option>Компакт-камера</option>
+                        <option>Беззеркальная</option>
+                        <option>Зеркальная</option>
+                        <option>Среднеформатная</option>
+                    </select>
+                    <select>
+                        <option>Любого бренда</option>
+                        <option>Canon</option>
+                        <option>Nikon</option>
+                        <option>Sony</option>
+                        <option>Fujifilm</option>
+                        <option>Samsung</option>
+                        <option>Olympus</option>
+                    </select>
+                    <div>
+                        <h3>от</h3>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h3>до</h3>
+                        <input type="text">
+                    </div>
+                    <button>ПРИМЕНИТЬ</button>
+                </div>
+            </div>
+        
+            <header>
+                <div class="wrapper">
+                    <button onclick="openBurgerMenu()" class="burger_menu">
+                        <img src="/img/burger_pic.svg" alt="menu">
+                    </button>
+                    <div class="logo">ЛОГОТИП</div>
+                    <a href="tel:8 800 777 50 50" class="telephone">8 800 777 50 50</a>
+                    <div class="find_product">
+                        <img src="/img/find_pic.svg" alt="find">
+                        <input type="text" placeholder="Поиск товаров">
+                    </div>
+                    <a class="header_info-link" href="#!">Доставка и оплата</a>
+                    <button class="search_button">
+                        <img src="/img/find_pic.svg" alt="search">
+                    </button>
+                    <button class="basket_button">
+                        <img src="/img/basket_pic.svg" alt="basket">
+                    </button>
+                </div>
+                <ul id="burgerMenu">
+                    <li><a href="#!">МОБИЛЬНЫЕ ТЕЛЕФОНЫ</a></li>
+                    <li><a href="#!">ПЛАНШЕТЫ</a></li>
+                    <li><a href="#!">ФОТОТЕХНИКА</a></li>
+                    <li><a href="#!">НОУТБУКИ</a></li>
+                    <li><a href="#!">ТЕЛЕВИЗОРЫ</a></li>
+                </ul>   
+            </header>
+
+            <section class="types_nav">
+                <div class="wrapper">
+                    <a href="#!">МОБИЛЬНЫЕ ТЕЛЕФОНЫ</a>
+                    <a href="#!">ПЛАНШЕТЫ</a>
+                    <a href="#!">ФОТОТЕХНИКА</a>
+                    <a href="#!">НОУТБУКИ</a>
+                    <a href="#!">ТЕЛЕВИЗОРЫ</a>
+                    <div>
+                        <div class="basket_pic"></div>
+                        <a href="#!">Корзина</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="filters">
+                <div class="wrapper">
+                    <select>
+                        <option>Любого логотипа</option>
+                        <option>Компакт-камера</option>
+                        <option>Беззеркальная</option>
+                        <option>Зеркальная</option>
+                        <option>Среднеформатная</option>
+                    </select>
+                    <select>
+                        <option>Любого бренда</option>
+                        <option>Canon</option>
+                        <option>Nikon</option>
+                        <option>Sony</option>
+                        <option>Fujifilm</option>
+                        <option>Samsung</option>
+                        <option>Olympus</option>
+                    </select>
+                    <div class="filter_price">
+                        <h3>ПО ЦЕНЕ</h3>
+                        <div class="filter_inputs">
+                            <div>
+                                <h5>от</h5>
+                                <input type="text" placeholder="500 000">
+                            </div>
+                            <div>
+                                <h5>от</h5>
+                                <input type="text" placeholder="25 000 000">
+                            </div>
+                        </div>
+                        <h3>РУБЛЕЙ</h3>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="adaptive_filter">
+                <div class="wrapper">
+                    <h5>ФОТОТЕХНИКА</h5>
+                    <button onclick="openModal()">
+                        <img src="/img/filter_button.svg" alt="filter">
+                    </button>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="wrapper">
+                    <div class="items">
+                        <div class="big_item">
+                            <img src="/img/camera_big-pic.svg" alt="camera">
+                            <div class="big_item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей профессиональных фотографов и видеооператоров. Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3 Мп. CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+, 61-точечный автофокус.</h4>
+                                <h5 class="old_price">4 400,00 руб.</h5>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/basket_red-pic.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="item_img" src="/img/camera_pic.svg" alt="camera">
+                            <div class="item-desc">
+                                <h3>Canon EOS 5D Mark III Body</h3>
+                                <h4>Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей, профессиональных фотографов.</h4>
+                                <div class="price">
+                                    <div class="current_price">3 200,00 руб.</div>
+                                    <a href="#!">
+                                        <img src="/img/baket_blue.svg" alt="basket">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+
+
+
+                    
+
+
+
+                    
+                </div>
+            </section>
+        
+    </div>
+    
+    <script src="/js/index.js"></script>
+</body>
+</html>
