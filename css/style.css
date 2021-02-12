@@ -25,7 +25,8 @@ body{
 .burger_menu,
 .basket_button,
 .search_button,
-.adaptive_filter{
+.adaptive_filter,
+.modal_area{
     display: none;
 }
 .search_button img{
