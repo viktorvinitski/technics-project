@@ -18,27 +18,45 @@
                     <img src="/img/close_modal-pic.svg" alt="close">
                 </button>
                 <div class="modal">
-                    <select>
-                        <option>Любого логотипа</option>
-                        <option>Компакт-камера</option>
-                        <option>Беззеркальная</option>
-                        <option>Зеркальная</option>
-                        <option>Среднеформатная</option>
-                    </select>
-                    <select>
-                        <option>Любого бренда</option>
-                        <option>Canon</option>
-                        <option>Nikon</option>
-                        <option>Sony</option>
-                        <option>Fujifilm</option>
-                        <option>Samsung</option>
-                        <option>Olympus</option>
-                    </select>
-                    <div>
+                    <div onclick="addModalLine(3)" class="select">
+                        <div id="select3" class="select__header">
+                            <div class="select_header-container">
+                                <span class="select__current">Любого логотипа</span>
+                                <div class="select__icon">
+                                    <img src="/img/select_arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="body3" class="select__body">
+                            <div class="select__item">Любого логотипа</div>
+                            <div class="select__item">Компакт-камера</div>
+                            <div class="select__item">Беззеркальная</div>
+                            <div class="select__item">Зеркальная</div>
+                            <div class="select__item">Среднеформатная</div>
+                        </div>
+                    </div>
+                    <div onclick="addModalLine(4)" class="select">
+                        <div id="select4" class="select__header">
+                            <div class="select_header-container">
+                                <span class="select__current">Любого логотипа</span>
+                                <div class="select__icon">
+                                    <img src="/img/select_arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="body4" class="select__body">
+                            <div class="select__item">Любого логотипа</div>
+                            <div class="select__item">Компакт-камера</div>
+                            <div class="select__item">Беззеркальная</div>
+                            <div class="select__item">Зеркальная</div>
+                            <div class="select__item">Среднеформатная</div>
+                        </div>
+                    </div>
+                    <div class="modal_input">
                         <h3>от</h3>
                         <input type="text">
                     </div>
-                    <div>
+                    <div class="modal_input">
                         <h3>до</h3>
                         <input type="text">
                     </div>
@@ -48,21 +66,19 @@
         
             <header>
                 <div class="wrapper">
-                    <button onclick="openBurgerMenu()" class="burger_menu">
-                        <img src="/img/burger_pic.svg" alt="menu">
-                    </button>
+                    <button onclick="openBurgerMenu()" class="burger_menu"></button>
                     <div class="logo">ЛОГОТИП</div>
                     <a href="tel:8 800 777 50 50" class="telephone">8 800 777 50 50</a>
                     <div class="find_product">
-                        <img src="/img/find_pic.svg" alt="find">
+                        <img src="/img/search_pic.svg" alt="find">
                         <input type="text" placeholder="Поиск товаров">
                     </div>
                     <a class="header_info-link" href="#!">Доставка и оплата</a>
                     <button class="search_button">
-                        <img src="/img/find_pic.svg" alt="search">
+                        <!-- <img src="/img/find_pic.svg" alt="search"> -->
                     </button>
                     <button class="basket_button">
-                        <img src="/img/basket_pic.svg" alt="basket">
+                        <!-- <img src="/img/basket_pic.svg" alt="basket"> -->
                     </button>
                 </div>
                 <ul id="burgerMenu">
@@ -90,22 +106,46 @@
 
             <section class="filters">
                 <div class="wrapper">
-                    <select>
-                        <option>Любого логотипа</option>
-                        <option>Компакт-камера</option>
-                        <option>Беззеркальная</option>
-                        <option>Зеркальная</option>
-                        <option>Среднеформатная</option>
-                    </select>
-                    <select>
-                        <option>Любого бренда</option>
-                        <option>Canon</option>
-                        <option>Nikon</option>
-                        <option>Sony</option>
-                        <option>Fujifilm</option>
-                        <option>Samsung</option>
-                        <option>Olympus</option>
-                    </select>
+                    <div onclick="addLine1(1)" class="select">
+                        <div id="select1" class="select__header">
+                            <div id="container1" class="select_header-container">
+                                <span class="select__current">Любого логотипа</span>
+                                <div class="select__icon">
+                                    <img src="/img/select_arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="body1" class="select__body">
+                            <div class="select__item">Любого логотипа</div>
+                            <div class="select__item">Компакт-камера</div>
+                            <div class="select__item">Беззеркальная</div>
+                            <div class="select__item">Зеркальная</div>
+                            <div class="select__item">Среднеформатная</div>
+                        </div>
+                    </div>
+
+                    <div onclick="addLine2(2)" class="select">
+                        <div id='select2' class="select__header">
+                            <div id="container2" class="select_header-container">
+                                <span class="select__current">Любого логотипа</span>
+                                <div class="select__icon">
+                                    <img src="/img/select_arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="select__body">
+                            <div class="select__item">Любого бренда</div>
+                            <div class="select__item">Canon</div>
+                            <div class="select__item">Nikon</div>
+                            <div class="select__item">Sony</div>
+                            <div class="select__item">Fujifilm</div>
+                            <div class="select__item">Samsung</div>
+                            <div class="select__item">Olympus</div>
+                        </div>
+                    </div>
+
+
                     <div class="filter_price">
                         <h3>ПО ЦЕНЕ</h3>
                         <div class="filter_inputs">
